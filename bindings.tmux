@@ -50,4 +50,10 @@ bind -T copy-mode-vi V send -X select-line   # visual line
 bind -T copy-mode-vi y send -X copy-pipe-and-cancel "reattach-to-user-namespace pbcopy"
 bind-key -T copy-mode-vi r send -X rectangle-toggle # visual block toggle
 
+bind = split-window -c "#{pane_current_path}" -h
+bind - split-window -c "#{pane_current_path}" -v
+
+bind c new-window -c "#{pane_current_path}"
+
+
 # vim: set syntax=tmux:
