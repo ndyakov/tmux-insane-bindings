@@ -55,5 +55,8 @@ bind - split-window -c "#{pane_current_path}" -v
 
 bind c new-window -c "#{pane_current_path}"
 
+bind ] next-window
+bind [ previous-window
+bind + copy-mode
 
 # vim: set syntax=tmux:
