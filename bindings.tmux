@@ -6,12 +6,11 @@ unbind C-b
 set -g prefix C-a
 bind C-a send-prefix
 
+# Switch to last window with double prefix
+bind C-a last-window
+
 # reload configuration with r
 bind r source-file ~/.tmux.conf \; display "Configuration reloaded!"
-
-# Switch to last window with /
-unbind /
-bind / last-window
 
 # Switch to last pane with C-q
 bind -r C-q last-pane
